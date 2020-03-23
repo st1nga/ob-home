@@ -21,7 +21,6 @@ pip install openob
 read -p "Enter password for coastfm: " passwd
 useradd -m coastfm
 echo coastfm:${passwd} | chpasswd
-cd /tmp
 echo "Adding alias's to /etc/profile"
 echo 'alias ll="ls -l --color=auto"' >> /etc/profile
 . /etc/profile
