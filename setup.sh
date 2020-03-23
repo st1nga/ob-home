@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Upgrading this node"
-read -p "Mauch sure usb drive with data in is not inserted" yn
+read -p "Make sure usb drive with data in is not inserted: <press enter>" yn
 apt update
 apt upgrade
 echo "Installing require programs"
