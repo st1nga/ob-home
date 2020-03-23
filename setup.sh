@@ -33,7 +33,7 @@ mv obsetup.key /etc/openvpn/
 echo "Restarting openvpn"
 systemctl restart openvpn
 read -p "Irriversable changes about to be made... COntinue (y)n ": yn
-if ( "$yn" != "y" )
+if [ "$yn" != "y" ]
 then
   exit
 fi
