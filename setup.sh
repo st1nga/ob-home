@@ -23,6 +23,7 @@ echo coastfm:${passwd} | chpasswd
 cd /tmp
 echo "Adding alias's to /etc/profile"
 echo 'alias ll="ls -l --color=auto"' >> /etc/profile
+. /etc/profile
 echo "Setting up openvpn"
 mv client.conf /etc/openvpn/
 mv cacert.pem /etc/openvpn/
