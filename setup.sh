@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Upgrading this node"
+read -p "Mauch sure usb drive with data in is not inserted" yn
 apt update
 apt upgrade
 echo "Installing require programs"
@@ -24,6 +25,7 @@ cd /tmp
 echo "Adding alias's to /etc/profile"
 echo 'alias ll="ls -l --color=auto"' >> /etc/profile
 . /etc/profile
+read -p "Insert usb drive" yn
 echo "Setting up openvpn"
 mv client.conf /etc/openvpn/
 mv cacert.pem /etc/openvpn/
