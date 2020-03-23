@@ -7,8 +7,15 @@ apt -y install mlocate
 apt -y install tcpdump
 apt -y install python-pip
 apt -y install udevil
+apt -y install gstreamer1.0-plugins-base
+apt -y install gstreamer1.0-plugins-good
+apt -y install gir1.2-gstreamer-1.0
+apt -y install python-gst-1.0
+apt -y install python-redis
+apt -y install python-gi
+apt -y install python-setuptools
 echo "Installing openOB
-easy_install openob
+pip install openob
 read -p "Enter password for coastfm: " passwd
 adduser -m coastfm
 chpasswd coastfm:$passwd
