@@ -1,4 +1,4 @@
-Echo "Upgrading this node"
+echo "Upgrading this node"
 apt update
 apt upgrade
 echo "Installing require programs"
@@ -6,7 +6,7 @@ apt -y install openvpn
 apt -y install mlocate
 apt -y install tcpdump
 apt -y install python-pip
-apy -y install udevil
+apt -y install udevil
 echo "Installing openOB
 easy_install openob
 read -p "Enter password for coastfm: " passwd
