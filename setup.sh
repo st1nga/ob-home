@@ -18,7 +18,7 @@ apt -y install python-setuptools
 echo "Installing openOB"
 pip install openob
 read -p "Enter password for coastfm: " passwd
-adduser coastfm
+useradd -m coastfm
 chpasswd coastfm:$passwd
 cd /tmp
 echo "Adding alias's to /etc/profile"
