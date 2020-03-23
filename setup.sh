@@ -27,14 +27,14 @@ mv client.conf /etc/openvpn/
 mv cacert.pem /etc/openvpn/
 mv obsetup.pem /etc/openvpn/
 mv obsetup.key /etc/openvpn/
-echo "REstarting openvpn"
+echo "Restarting openvpn"
 systemctl restart openvpn
 cat /proc/self/net/dev
 read -p "Enter the 2nd network interface:" interface_2
 echo "#pci card interface used for radiodj pc etc al" >> 
 echo "allow-hotplug $interface_2" >> /etc/network/interfaces
 echo "iface $interface_2 inet static" >> /etc/network/interfaces
-read -p "Enter the 2nd network interface ip address (10.222.253.???: " ip_2
+read -p "Enter the 2nd network interface ip address \(10.222.253.???\): " ip_2
 echo "address $ip_2" >> /etc/network/interfaces
 echo "netmask 255.255.255.0" >> /etc/network/interfaces
 echo "broadcast 10.222.253.255" >> /etc/network/interfaces
