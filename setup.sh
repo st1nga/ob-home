@@ -25,7 +25,7 @@ cd /tmp
 echo "Adding alias's to /etc/profile"
 echo 'alias ll="ls -l --color=auto"' >> /etc/profile
 . /etc/profile
-read -p "Insert usb drive" yn
+read -p "Insert usb drive, press <enter> when done " yn
 echo "Setting up openvpn"
 mv client.conf /etc/openvpn/
 mv cacert.pem /etc/openvpn/
