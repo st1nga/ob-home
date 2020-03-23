@@ -15,7 +15,7 @@ apt -y install python-gst-1.0
 apt -y install python-redis
 apt -y install python-gi
 apt -y install python-setuptools
-echo "Installing openOB
+echo "Installing openOB"
 pip install openob
 read -p "Enter password for coastfm: " passwd
 adduser -m coastfm
