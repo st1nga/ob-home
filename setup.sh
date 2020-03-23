@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Upgrading this node"
 apt update
 apt upgrade
