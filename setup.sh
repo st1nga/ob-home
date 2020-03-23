@@ -35,7 +35,7 @@ systemctl restart openvpn
 read -p "Irriversable changes about to be made... COntinue (y)n ": yn
 if [ "$yn" != "y" ]
 then
-  exit
+  return
 fi
 cat /proc/self/net/dev
 read -p "Enter the 2nd network interface: " interface_2
