@@ -33,6 +33,11 @@ mv obsetup.pem /etc/openvpn/
 mv obsetup.key /etc/openvpn/
 echo "Restarting openvpn"
 systemctl restart openvpn
+read -p "Irriversable changes about to be made... COntinue (y)n ": yn
+if ( "$yn" != "y" )
+then
+  exit
+fi
 cat /proc/self/net/dev
 read -p "Enter the 2nd network interface: " interface_2
 echo "#pci card interface used for radiodj pc etc al" >> /etc/network/interfaces
